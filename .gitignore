@@ -1,0 +1,39 @@
+# ======================================
+# ⛔ ENTORNOS VIRTUALES
+# ======================================
+.venv/
+
+# ======================================
+# ⛔ ARCHIVOS GRANDES ( > 100MB )
+# Estos no pueden subirse a GitHub
+# ======================================
+data/processed/clientes_clustering.csv
+data/processed/transacciones_apriori.csv
+data/order_products__prior.csv
+data/orders.csv
+
+# ======================================
+# 🧹 ARCHIVOS TEMPORALES DEL SISTEMA
+# ======================================
+*.log
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# ======================================
+# 📄 ARCHIVOS WORD Y BACKUPS TEMPORALES
+# ======================================
+*.docx
+~$*.docx
+
+# ======================================
+# 🐍 ARCHIVOS TEMPORALES DE PYTHON
+# ======================================
+__pycache__/
+*.py[cod]
+
+# ======================================
+# 🛠️ CONFIGURACIÓN DE EDITORES (VSCode / JetBrains)
+# ======================================
+.vscode/
+.idea/
