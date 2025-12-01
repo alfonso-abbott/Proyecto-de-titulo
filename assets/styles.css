@@ -1,0 +1,218 @@
+/* Fondo general */
+.app-background {
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #1f2933 0, #05070b 50%, #020308 100%);
+    padding: 20px;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Contenedor principal */
+.app-shell {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 24px 40px 24px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+}
+
+/* Header */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+    margin-bottom: 18px;
+}
+
+.app-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #020308;
+    background: linear-gradient(135deg, #00eaff, #9b55ff);
+    box-shadow: 0 0 12px rgba(0,234,255,0.6);
+}
+
+.app-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f9fafb;
+}
+
+/* Navegación */
+.app-header-right {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-link {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: all 0.18s ease-out;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    border-color: rgba(148, 163, 184, 0.7);
+    background: radial-gradient(circle at 0 0, rgba(0,234,255,0.18), transparent 55%);
+}
+
+/* Contenedor de página */
+.page-container {
+    margin-top: 18px;
+}
+
+/* Títulos de página */
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f9fafb;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-bottom: 22px;
+}
+
+/* Grid de tarjetas */
+.card-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.card-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 18px;
+}
+
+/* Tarjetas glass */
+.glass-card {
+    position: relative;
+    border-radius: 18px;
+    padding: 16px 16px 18px 16px;
+    background: radial-gradient(circle at top left, rgba(148,163,184,0.18), rgba(15,23,42,0.85));
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(148,163,184,0.45);
+    box-shadow: 0 18px 40px rgba(15,23,42,0.85);
+    transition: transform 0.18s ease-out, box-shadow 0.18s ease-out, border-color 0.18s;
+}
+
+.glass-card:hover {
+    transform: translateY(-3px);
+    border-color: #00eaff;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+
+/* Tarjeta clickeable */
+.glass-link {
+    text-decoration: none;
+}
+
+/* Contenido de tarjeta */
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f9fafb;
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.card-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #e5e7eb;
+    background: linear-gradient(135deg, rgba(0,234,255,0.18), rgba(155,85,255,0.32));
+    margin-bottom: 8px;
+}
+
+/* Gráficos */
+.graph-container {
+    margin-top: 10px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.graph-full {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(148,163,184,0.4);
+}
+
+/* Panel de filtros */
+.filter-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.filter-field {
+    min-width: 180px;
+    flex: 1 1 200px;
+}
+
+.filter-label {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-bottom: 4px;
+}
+
+/* Texto auxiliar */
+.helper-text {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 6px;
+}
+
+/* Dash core components en dark */
+.Select-control,
+.Select-menu-outer,
+.rc-slider-tooltip-inner {
+    background-color: #020617 !important;
+    border-color: #4b5563 !important;
+    color: #e5e7eb !important;
+}
+
+.rc-slider-handle {
+    border: solid 2px #00eaff !important;
+}
+
+.rc-slider-track {
+    background-color: #00eaff !important;
+}
+
+.rc-slider-rail {
+    background-color: #4b5563 !important;
+}

@@ -8,6 +8,6 @@ REM Ruta explícita al python del entorno virtual
 set PYTHON_VENV=%~dp0.venv\Scripts\python.exe
 
 echo Ejecutando el dashboard interactivo...
-"%PYTHON_VENV%" "scripts_final\app_dashboard.py"
+"%PYTHON_VENV%" "app_dashboard.py"
 
 pause
