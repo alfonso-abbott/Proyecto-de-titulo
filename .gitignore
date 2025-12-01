@@ -1,0 +1,41 @@
+# ======================================
+# ⛔ ENTORNOS VIRTUALES
+# ======================================
+.venv/
+
+# ======================================
+# ⛔ ARCHIVOS GRANDES ( > 100MB )
+# ======================================
+
+data/datos/order_products__prior.csv
+data/datos/orders.csv
+
+data/procesados/01. transacciones_apriori.csv
+data/procesados/02. clientes_clustering.csv
+data/procesados/06. transacciones_apriori_por_cluster.csv
+
+# ======================================
+# 🧹 ARCHIVOS TEMPORALES DEL SISTEMA
+# ======================================
+*.log
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# ======================================
+# 📄 ARCHIVOS WORD Y BACKUPS TEMPORALES
+# ======================================
+*.docx
+~$*.docx
+
+# ======================================
+# 🐍 ARCHIVOS TEMPORALES DE PYTHON
+# ======================================
+__pycache__/
+*.py[cod]
+
+# ======================================
+# 🛠️ CONFIGURACIÓN DE EDITORES
+# ======================================
+.vscode/
+.idea/
