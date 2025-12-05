@@ -165,10 +165,8 @@ clustering_df = full_data[[
     "order_hour_of_day", "days_since_prior_order", "department"
 ]]
 
-###################################################################################################################
 
-
-######### 3️⃣ Groupby por usuario #########
+######### Groupby por usuario #########
 
 clustering_df.to_csv(output_path + "02. clientes_clustering.csv", index=False)
 print("📤 Exportado: 02. clientes_clustering.csv")
